@@ -1,3 +1,5 @@
+from collections import Counter
+
 palety = [
     (17, 350),
     (12, 200),
@@ -36,7 +38,6 @@ def pakuj_ladunki_na_pojazdy(ladunki, pojemnosci):
 
 pojazdy_uzyte = pakuj_ladunki_na_pojazdy(ladunki, pojazdy)
 
-from collections import Counter
 licznik = Counter([p[2] for p in pojazdy_uzyte])
 
 print("Potrzebne pojazdy:")
